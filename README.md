@@ -1,1 +1,1 @@
-1er commit structure basique du site
+1er commit: structure basique du site
