@@ -1,0 +1,395 @@
+/***********************************************   Base   **********************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap'); 
+
+body * {
+   font-family: 'Syne', sans-serif;
+}
+
+main {
+    background-color:white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/********************************************   Header    ***********************************/
+
+nav {
+   display: flex;    
+   flex-direction: row;
+   justify-content: space-between;
+   height: 80px;
+}
+
+.header-logo {
+    padding: 30px;
+}
+
+.menu {
+   display: flex;    
+   flex-direction: row;
+   text-align: center;
+}
+
+.menu-item a {
+    text-decoration: none;
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 236px;
+    height: 80px;
+}
+
+.menu-item:nth-child(1) a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 0em;
+    color: black;
+}
+
+.menu-item:nth-child(2) a {
+    background-color: #E0B9B4;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 0em;
+    color: white;
+}
+
+.menu-item:nth-child(2) a:hover {
+    background-color: #C02E44;
+}
+
+/**********************************************   Footer    **************************************/
+
+
+footer {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: Syne;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 0em;
+    color: black;
+}
+/**********************************************  Front page  Section 1  Presentation  ******************************/
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    background-color: #ECE2DA;
+    padding: 100px 0 100px 0;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    filter: drop-shadow(0px 15px 0px rgba(0, 0, 0, 0.2));
+}
+
+.slogan {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 45,6px;
+    color:#3B8E46;
+    text-align: center;
+}
+
+.plantycan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feuilles1 {
+    z-index: 1;
+    position: absolute;
+    right: 50%;
+}
+
+.feuilles2 {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+}
+
+.canette {
+    z-index: 3;
+}
+
+/******************************************** Front page  Section 2  Composition  **********************************/
+
+.composition {
+    padding: 100px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.composition h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color:#3B8E46;
+    padding-bottom: 50px;
+}
+
+.composition p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color:black;
+    max-width: 497px;
+    text-align: center;
+}
+
+/***********************************************  Front page  Section 3  Gouts     ****************************************/
+
+.gouts {
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    background-color: #ECE2DA;
+    padding: 50px 0 50px 0;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.2));
+}
+
+.gouts h3 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color:#D2776A;
+    padding-bottom: 20px;
+}
+
+.gouts p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color:black;
+    padding-bottom: 50px;
+}
+
+.fruits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 50px;
+    max-width: 1024px;
+}
+
+.fruits-cards {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+.fruits-cards h2 {
+    position:absolute;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 58px;
+    letter-spacing: 0em;
+    color:white;
+}
+
+.gouts a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color: #E0B9B4;
+    color:white;
+	border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-decoration: none;
+    width: 198px;
+    height: 55px;
+    
+}
+
+.gouts a:hover {
+    background-color: #C02E44;
+}
+
+/**************************************************  Front page   Section 4  Avis **************************************/
+
+.avis h2 {
+    padding: 100px 0 100px 0;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color:#3B8E46;
+    text-align: center;
+}
+
+.temoignages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.temoignages img {
+    max-height: 139px;
+}
+
+.temoins {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 343px;
+    
+}
+
+.temoin-texte {
+    max-width: 55%;
+}
+
+.temoin-texte h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color:#3B8E46;
+    text-align: left;
+}
+
+.temoin-texte p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:black;
+}
+
+.multicans {
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+
+.can1 {
+    width: 350px;
+    position: absolute;
+    left: -130px;
+}
+
+.can2 {
+    width: 350px;
+    position: absolute;
+    left: 60px;
+}
+
+.can3 {
+    width: 350px;
+    position: absolute;
+    left: 250px;
+}
+
+.can4 {
+    width: 350px;
+    position: absolute;
+    left: 440px;
+}
+
+.can5 {
+    width: 350px;
+    position: absolute;
+    left: 630px;
+}
+
+.can6 {
+    width: 350px;
+    position: absolute;
+    left: 820px;
+}
+
+.can7 {
+    width: 350px;
+    position: absolute;
+    left: 1010px;
+}
+
+.can8 {
+    width: 350px;
+    position: absolute;
+    left: 1200px;
+}
+
+.can9 {
+    width: 350px;
+    position: absolute;
+    left: 1390px;
+}
+
+.can10 {
+    width: 350px;
+    position: absolute;
+    left: 1580px;
+}
+
+.can11 {
+    width: 350px;
+    position: absolute;
+    left: 1770px;
+}
+
+.can12 {
+    width: 350px;
+    position: absolute;
+    left: 1960px;
+}
+
+.can13 {
+    width: 350px;
+    position: absolute;
+    left: 2150px;
+}
+
+.can14 {
+    width: 350px;
+    position: absolute;
+    left: 2340px;
+}
+
+.can15 {
+    width: 350px;
+    position: absolute;
+    left: 2530px;
+}
+
+.can16 {
+    width: 350px;
+    position: absolute;
+    left: 2720px;
+}
+
+.can17 {
+    width: 350px;
+    position: absolute;
+    left: 2910px;
+}

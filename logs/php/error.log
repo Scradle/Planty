@@ -3,3 +3,6 @@
 [16-Jan-2024 01:12:40 UTC] PHP Warning:  Undefined variable $qsid in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\plugins\child-theme-configurator\includes\classes\CSS.php on line 967
 [16-Jan-2024 01:12:40 UTC] PHP Warning:  Undefined variable $qsid in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\plugins\child-theme-configurator\includes\classes\CSS.php on line 968
 [16-Jan-2024 01:12:40 UTC] PHP Warning:  Undefined variable $qsid in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\plugins\child-theme-configurator\includes\classes\CSS.php on line 971
+[19-Jan-2024 17:40:50 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\Scradle\Local Sites\planty\app\public/wp-content/themes/blankslate-child/css/theme.css in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\themes\blankslate-child\functions.php on line 20
+[19-Jan-2024 17:40:50 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\Scradle\Local Sites\planty\app\public/wp-content/themes/blankslate-child/css/theme.css in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\themes\blankslate-child\functions.php on line 20
+[21-Jan-2024 14:01:02 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\themes\blankslate-child\front-page.php on line 69
