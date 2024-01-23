@@ -6,6 +6,11 @@ body * {
    font-family: 'Syne', sans-serif;
 }
 
+/*body {
+    max-width: 1440px;
+    margin: 0 auto;
+}*/
+
 main {
     background-color:white;
     width: 100%;
@@ -24,6 +29,7 @@ nav {
 
 .header-logo {
     padding: 30px;
+    max-height: 100%;
 }
 
 .menu {
@@ -392,4 +398,85 @@ footer a {
     width: 350px;
     position: absolute;
     left: 2910px;
+}
+
+/*******************************   page nous rencontrer  section 1  rencontre  *********************************/
+
+.rencontre {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #ECE2DA;
+    padding: 300px 0 150px 0;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.2));
+}
+
+.rencontre img {
+    position:absolute;
+    left: 20%;
+    bottom: 40%;
+    z-index: 1;
+}
+
+.rencontre h2 {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #D2776A;
+    padding-bottom: 50px;
+    z-index: 2;
+}
+
+.rencontre p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    max-width: 669px;
+    margin: 0 auto;
+}
+
+/*******************************   page nous rencontrer  section 2  équipe  *********************************/
+
+.equipe h3 {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;  
+    padding: 100px 0 50px 0;  
+}
+
+.membres {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    gap: 200px;
+}
+
+.membres h4 {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.membres p {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-bottom: 100px;
 }
