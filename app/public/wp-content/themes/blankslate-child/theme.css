@@ -6,10 +6,11 @@ body * {
    font-family: 'Syne', sans-serif;
 }
 
-/*body {
+body {
     max-width: 1440px;
+    min-width: 320px;
     margin: 0 auto;
-}*/
+}
 
 main {
     background-color:white;
@@ -88,6 +89,8 @@ footer a {
     letter-spacing: 0em;
     color: black;
 }
+
+/**************************************************************************************************************/
 /**********************************************  Front page  Section 1  Presentation  ******************************/
 
 .presentation {
@@ -215,6 +218,7 @@ footer a {
     line-height: 58px;
     letter-spacing: 0em;
     color:white;
+    text-align: center;
 }
 
 .gouts a {
@@ -400,6 +404,7 @@ footer a {
     left: 2910px;
 }
 
+/**************************************************************************************************************/
 /*******************************   page nous rencontrer  section 1  rencontre  *********************************/
 
 .rencontre {
@@ -410,12 +415,12 @@ footer a {
     padding: 300px 0 150px 0;
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
-    filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.1));
 }
 
 .rencontre img {
     position:absolute;
-    left: 20%;
+    left: 10%;
     bottom: 40%;
     z-index: 1;
 }
@@ -444,6 +449,11 @@ footer a {
 
 /*******************************   page nous rencontrer  section 2  équipe  *********************************/
 
+.equipe {
+    position: relative;
+}
+
+
 .equipe h3 {
     color: black;
     font-size: 30px;
@@ -454,11 +464,20 @@ footer a {
     padding: 100px 0 50px 0;  
 }
 
+.feuilles1bis {
+    position: absolute;
+    scale: 55%;
+    left: 80%;
+    bottom: -93px;
+}
+
+
 .membres {
     display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
     gap: 200px;
+    position: relative;
 }
 
 .membres h4 {
@@ -468,7 +487,6 @@ footer a {
     line-height: 24px;
     letter-spacing: 0em;
     text-align: center;
-
 }
 
 .membres p {
@@ -479,4 +497,85 @@ footer a {
     letter-spacing: 0em;
     text-align: center;
     padding-bottom: 100px;
+}
+
+
+/*******************************   page nous rencontrer  section 3  nous contacter  *********************************/
+
+.nous-contacter{
+    background-color: #ECE2DA;
+    padding: 50px 0 50px 0;
+    position: relative;
+}
+
+.nous-contacter h3  {
+    color:black;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/*wpcf7-form-control wpcf7-text wpcf7-validates-as-required */
+
+.nous-contacter p {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.wpcf7-form-control {
+    position: relative;
+    border-radius: 5%;
+    border: none;
+    padding-top: 20px;
+    margin-top: 20px;
+    z-index: 2;
+}
+.wpcf7-submit {
+    background-color: #E0B9B4;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    color: white;
+    height: 55px;
+    width: 198px;
+    cursor: pointer;
+}
+
+
+.wpcf7-submit:hover {
+    background-color: #C02E44;
+}
+
+.feuilles3 {
+    position: absolute;
+    z-index: 1;
+    left: 33%;
+    bottom: 16%;
+}
+/**************************************************************************************************************/
+/*******************************   page  commander  section 1  nous contacter  *********************************/
+
+.commander {
+    background-color: #3B8E46;
+    padding: 100px 0 100px 0;  
+}
+
+.commander h2 {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
 }

@@ -11,6 +11,7 @@ get_header();
 <section class="equipe">
     <h3>L'équipe</h3>
         <div class="membres">
+            <img class="feuilles1bis" src="http://planty.local/wp-content/uploads/2024/01/Feuilles1.png" alt="Feuilles">
             <article>
                 <img src="http://planty.local/wp-content/uploads/2024/01/Equipe1.png" alt="Mégane, CEO">
                 <h4>Mégane</h4>
@@ -27,6 +28,11 @@ get_header();
                 <p>Mixologue</p>
             </article>
         </div>
+</section>
+<section class="nous-contacter">
+    <h3>Nous contacter</h3>
+    <?php echo do_shortcode('[contact-form-7 id="48f0093" title="Contact form 1"]'); ?>
+    <img class="feuilles3" src="http://planty.local/wp-content/uploads/2024/01/Feuilles3.png" alt="Feuilles">
 </section>
 <?php
 get_footer();
