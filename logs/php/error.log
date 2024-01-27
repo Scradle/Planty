@@ -6,3 +6,12 @@
 [19-Jan-2024 17:40:50 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\Scradle\Local Sites\planty\app\public/wp-content/themes/blankslate-child/css/theme.css in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\themes\blankslate-child\functions.php on line 20
 [19-Jan-2024 17:40:50 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\Scradle\Local Sites\planty\app\public/wp-content/themes/blankslate-child/css/theme.css in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\themes\blankslate-child\functions.php on line 20
 [21-Jan-2024 14:01:02 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\themes\blankslate-child\front-page.php on line 69
+[26-Jan-2024 09:02:44 UTC] PHP Parse error:  Unterminated comment starting line 8 in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\themes\blankslate-child\functions.php on line 8
+[26-Jan-2024 09:02:44 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\Scradle\Local Sites\planty\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[26-Jan-2024 09:02:44 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\Scradle\Local Sites\planty\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[26-Jan-2024 09:02:46 UTC] PHP Parse error:  Unterminated comment starting line 8 in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\themes\blankslate-child\functions.php on line 8
+[26-Jan-2024 09:02:48 UTC] PHP Parse error:  Unterminated comment starting line 8 in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\themes\blankslate-child\functions.php on line 8
+[26-Jan-2024 09:02:49 UTC] PHP Parse error:  Unterminated comment starting line 8 in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\themes\blankslate-child\functions.php on line 8
+[26-Jan-2024 09:03:13 UTC] PHP Parse error:  Unterminated comment starting line 8 in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\themes\blankslate-child\functions.php on line 8
+[26-Jan-2024 09:03:13 UTC] PHP Parse error:  Unterminated comment starting line 8 in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\themes\blankslate-child\functions.php on line 8
+[26-Jan-2024 09:03:26 UTC] PHP Parse error:  Unterminated comment starting line 8 in C:\Users\Scradle\Local Sites\planty\app\public\wp-content\themes\blankslate-child\functions.php on line 8

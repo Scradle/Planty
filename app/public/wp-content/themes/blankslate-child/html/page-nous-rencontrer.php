@@ -29,6 +29,7 @@ get_header();
             </article>
         </div>
 </section>
+<!--Section 2-->
 <section class="nous-contacter">
     <h3>Nous contacter</h3>
     <?php echo do_shortcode('[contact-form-7 id="48f0093" title="Contact form 1"]'); ?>

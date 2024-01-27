@@ -4,7 +4,6 @@
 
 body * {
    font-family: 'Syne', sans-serif;
-   text-decoration: none;
 }
 
 body {
@@ -148,7 +147,7 @@ footer a {
 	align-items: center;
 }
 
-.composition-h3 {
+.composition h3 {
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -157,7 +156,7 @@ footer a {
     padding-bottom: 50px;
 }
 
-.composition-p {
+.composition p {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -181,7 +180,7 @@ footer a {
     filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.2));
 }
 
-.gouts-h3 {
+.gouts h3 {
     font-size: 30px;
     font-weight: 800;
     line-height: 36px;
@@ -190,7 +189,7 @@ footer a {
     padding-bottom: 20px;
 }
 
-.gouts-p {
+.gouts p {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -208,7 +207,7 @@ footer a {
     max-width: 1024px;
 }
 
-.fruits-card {
+.fruits-cards {
     display: flex;
 	justify-content: center;
 	align-items: center;
@@ -216,7 +215,7 @@ footer a {
     padding: 10px;
 }
 
-.fruits-card-h2 {
+.fruits-cards h2 {
     position:absolute;
     font-size: 48px;
     font-weight: 800;
@@ -226,7 +225,7 @@ footer a {
     text-align: center;
 }
 
-.gouts-a {
+.gouts a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -243,13 +242,13 @@ footer a {
     
 }
 
-.gouts-a:hover {
+.gouts a:hover {
     background-color: #C02E44;
 }
 
 /**************************************************  Front page   Section 4  Avis **************************************/
 
-.avis-h2 {
+.avis h2 {
     padding: 100px 0 100px 0;
     font-size: 30px;
     font-weight: 800;
@@ -267,7 +266,7 @@ footer a {
     padding-bottom: 100px;
 }
 
-.temoignages-img {
+.temoignages img {
     max-height: 139px;
 }
 
@@ -283,7 +282,7 @@ footer a {
     max-width: 55%;
 }
 
-.temoin-texte-h3 {
+.temoin-texte h3 {
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -292,7 +291,7 @@ footer a {
     text-align: left;
 }
 
-.temoin-texte-p {
+.temoin-texte p {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -301,94 +300,112 @@ footer a {
     color:black;
 }
 
-/**************************************************  Front page   Section 5  multicans **************************************/
-
-
 .multicans {
-    height: 220px;
+    height: 320px;
     overflow: hidden;
     position: relative;
-    width: 100%;
 }
 
 .can1 {
+    width: 350px;
     position: absolute;
-    left: -70px;
+    left: -130px;
 }
 
 .can2 {
+    width: 350px;
     position: absolute;
-    left: 25px;
+    left: 60px;
 }
 
 .can3 {
+    width: 350px;
     position: absolute;
-    left: 120px;
+    left: 250px;
 }
 
 .can4 {
+    width: 350px;
     position: absolute;
-    left: 215px;
+    left: 440px;
 }
 
 .can5 {
+    width: 350px;
     position: absolute;
-    left: 310px;
+    left: 630px;
 }
 
 .can6 {
+    width: 350px;
     position: absolute;
-    left: 405px;
+    left: 820px;
 }
 
 .can7 {
+    width: 350px;
     position: absolute;
-    left: 500px;
+    left: 1010px;
 }
 
 .can8 {
+    width: 350px;
     position: absolute;
-    left: 595px;
+    left: 1200px;
 }
 
 .can9 {
+    width: 350px;
     position: absolute;
-    left: 690px;
+    left: 1390px;
 }
 
 .can10 {
+    width: 350px;
     position: absolute;
-    left: 785px;
+    left: 1580px;
 }
 
 .can11 {
+    width: 350px;
     position: absolute;
-    left: 880px;
+    left: 1770px;
 }
 
 .can12 {
+    width: 350px;
     position: absolute;
-    left: 975px;
+    left: 1960px;
 }
 
 .can13 {
+    width: 350px;
     position: absolute;
-    left: 1070px;
+    left: 2150px;
 }
 
 .can14 {
+    width: 350px;
     position: absolute;
-    left: 1165px;
+    left: 2340px;
 }
 
 .can15 {
+    width: 350px;
     position: absolute;
-    left: 1210px;
+    left: 2530px;
 }
 
 .can16 {
+    width: 350px;
     position: absolute;
-    left: 1320px;
+    left: 2720px;
+}
+
+.can17 {
+    width: 350px;
+    position: absolute;
+    left: 2910px;
 }
 
 /**************************************************************************************************************/
@@ -405,14 +422,14 @@ footer a {
     filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.1));
 }
 
-.rencontre-img {
+.rencontre img {
     position:absolute;
     left: 10%;
     bottom: 40%;
     z-index: 1;
 }
 
-.rencontre-h2 {
+.rencontre h2 {
     font-size: 38px;
     font-weight: 800;
     line-height: 46px;
@@ -423,7 +440,7 @@ footer a {
     z-index: 2;
 }
 
-.rencontre-p {
+.rencontre p {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -441,7 +458,7 @@ footer a {
 }
 
 
-.equipe-h3 {
+.equipe h3 {
     color: black;
     font-size: 30px;
     font-weight: 700;
@@ -453,9 +470,9 @@ footer a {
 
 .feuilles1bis {
     position: absolute;
-    scale: 60%;
+    scale: 55%;
     left: 80%;
-    bottom: -70px;
+    bottom: -93px;
 }
 
 
@@ -467,7 +484,7 @@ footer a {
     position: relative;
 }
 
-.membres-h4 {
+.membres h4 {
     color: black;
     font-size: 20px;
     font-weight: 700;
@@ -476,7 +493,7 @@ footer a {
     text-align: center;
 }
 
-.membres-p {
+.membres p {
     color: black;
     font-size: 20px;
     font-weight: 400;
@@ -489,13 +506,13 @@ footer a {
 
 /*******************************   page nous rencontrer  section 3  nous contacter  *********************************/
 
-.nous-contacter {
+.nous-contacter{
     background-color: #ECE2DA;
     padding: 50px 0 50px 0;
     position: relative;
 }
 
-.nous-contacter-h3 {
+.nous-contacter h3  {
     color:black;
     font-size: 30px;
     font-weight: 700;
@@ -505,20 +522,25 @@ footer a {
     padding-bottom: 50px;
 }
 
-.nous-contacter-p {
+.nous-contacter p {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;   
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 30px;
 }
 
 .wpcf7-form-control {
     position: relative;
-    border-radius: 15px;
+    border-radius: 5%;
     border: none;
+    padding-top: 20px;
+    margin-top: 20px;
     z-index: 2;
-    margin: 30px 0 30px 0;
-    
 }
 .wpcf7-submit {
     background-color: #E0B9B4;
@@ -532,31 +554,16 @@ footer a {
     cursor: pointer;
 }
 
+
 .wpcf7-submit:hover {
     background-color: #C02E44;
-}
-
-.contact-form {
-    
-}
-
-.contactform {
-    
-}
-
-.formcontact {
-    
-}
-
-.form-contact {
-
 }
 
 .feuilles3 {
     position: absolute;
     z-index: 1;
     left: 33%;
-    bottom: 17%;
+    bottom: 16%;
 }
 /**************************************************************************************************************/
 /*******************************   page  commander  section 1  nous contacter  *********************************/
@@ -566,7 +573,7 @@ footer a {
     padding: 100px 0 100px 0;  
 }
 
-.commander-h2 {
+.commander h2 {
     font-size: 38px;
     font-weight: 800;
     line-height: 46px;
@@ -578,10 +585,13 @@ footer a {
 
 
 .commande {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     max-width: 80%;
 }
 
-.commande-h3 {
+.commande h3 {
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -595,8 +605,6 @@ footer a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-    max-width: 90%;
-    margin: 0 auto;
 }
 
 .parfum {
@@ -608,15 +616,16 @@ footer a {
 }
 
 
-.parfum-img {
+.parfum img {
     max-width: 80%;
 }
 
-.parfum-h2 {
+.parfum h2 {
     position:absolute;
     font-size: 20px;
     font-weight: 800;
     line-height: 24px;
     letter-spacing: 0em;
     color:white;
+    bottom: 5px;
 }
