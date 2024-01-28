@@ -39,7 +39,6 @@ nav {
 
 .menu {
    display: flex;    
-   flex-direction: row;
    text-align: center;
 }
 
@@ -49,28 +48,39 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 236px;
     height: 80px;
 }
 
-.menu-item:nth-child(1) a {
+.menu-item:first-child a {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 19.2px;
     letter-spacing: 0em;
     color: black;
+    width: 200px;
+
 }
 
-.menu-item:nth-child(2) a {
+.menu-item-administration a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: black;
+    width: 120px;
+}
+
+.menu-item:last-child a {
     background-color: #E0B9B4;
     font-size: 16px;
     font-weight: 700;
     line-height: 19.2px;
     letter-spacing: 0em;
     color: white;
+    width: 236px;
 }
 
-.menu-item:nth-child(2) a:hover {
+.menu-item:last-child a:hover {
     background-color: #C02E44;
 }
 
@@ -105,7 +115,7 @@ footer a {
     padding: 100px 0 100px 0;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
-    filter: drop-shadow(0px 15px 0px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 10px 0px rgba(0, 0, 0, 0.2));
 }
 
 .slogan {
@@ -305,90 +315,110 @@ footer a {
 
 
 .multicans {
-    height: 220px;
+    height: 180px;
     overflow: hidden;
     position: relative;
     width: 100%;
 }
 
+.multicans2 {
+    background-color: #ECE2DA;
+}
+
 .can1 {
     position: absolute;
-    left: -70px;
+    left: -58px;
+    bottom: -144px;
 }
 
 .can2 {
     position: absolute;
-    left: 25px;
+    left: 33px;
+    bottom: -122px;
 }
 
 .can3 {
     position: absolute;
-    left: 120px;
+    left: 126px;
+    bottom: -144px;
 }
 
 .can4 {
     position: absolute;
-    left: 215px;
+    left: 219px;
+    bottom: -164px;
 }
 
 .can5 {
     position: absolute;
-    left: 310px;
+    left: 312px;
+    bottom: -144px;
 }
 
 .can6 {
     position: absolute;
     left: 405px;
+    bottom: -122px;
 }
 
 .can7 {
     position: absolute;
-    left: 500px;
+    left: 498px;
+    bottom: -164px;
 }
 
 .can8 {
     position: absolute;
-    left: 595px;
+    left: 591px;
+    bottom: -144px;
 }
 
 .can9 {
     position: absolute;
-    left: 690px;
+    left: 684px;
+    bottom: -122px;
 }
 
 .can10 {
     position: absolute;
-    left: 785px;
+    left: 777px;
+    bottom: -144px;
 }
 
 .can11 {
     position: absolute;
-    left: 880px;
+    left: 870px;
+    bottom: -164px;
 }
 
 .can12 {
     position: absolute;
-    left: 975px;
+    left: 963px;
+    bottom: -144px;
 }
 
 .can13 {
     position: absolute;
-    left: 1070px;
+    left: 1056px;
+    bottom: -122px;
 }
 
 .can14 {
     position: absolute;
-    left: 1165px;
+    left: 1149px;
+    bottom: -144px;
 }
 
 .can15 {
     position: absolute;
-    left: 1210px;
+    left: 1232px;
+    bottom: -164px;
 }
 
 .can16 {
     position: absolute;
-    left: 1320px;
+    left: 1352px;
+    bottom: -144px;
 }
 
 /**************************************************************************************************************/
@@ -399,7 +429,7 @@ footer a {
     display: flex;
     flex-direction: column;
     background-color: #ECE2DA;
-    padding: 300px 0 150px 0;
+    padding: 200px 0 150px 0;
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
     filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.1));
@@ -407,8 +437,9 @@ footer a {
 
 .rencontre-img {
     position:absolute;
+    scale: 70%;
     left: 10%;
-    bottom: 40%;
+    bottom: 35%;
     z-index: 1;
 }
 
@@ -505,58 +536,69 @@ footer a {
     padding-bottom: 50px;
 }
 
-.nous-contacter-p {
+.form-label {
+    display: block;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;   
+    letter-spacing: 0em;
 }
 
-.wpcf7-form-control {
-    position: relative;
-    border-radius: 15px;
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
     border: none;
+    resize: none;
+    margin: 10px 0 20px 0;
+
+    position: relative;
     z-index: 2;
-    margin: 30px 0 30px 0;
-    
 }
-.wpcf7-submit {
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"] {
+    height: 71px;
+    width: 383px;
+}
+
+.wpcf7-form textarea {
+    height: 237px;
+    width: 383px;
+}
+
+.wpcf7-form input[type="submit"] {
     background-color: #E0B9B4;
     font-size: 15px;
     font-weight: 400;
     line-height: 37px;
     letter-spacing: 0em;
     color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
     height: 55px;
     width: 198px;
-    cursor: pointer;
 }
 
-.wpcf7-submit:hover {
+.submit {
+text-align: center;
+padding-left: 70px;
+}
+
+.wpcf7-form input[type="submit"]:hover {
     background-color: #C02E44;
-}
-
-.contact-form {
-    
-}
-
-.contactform {
-    
-}
-
-.formcontact {
-    
-}
-
-.form-contact {
-
 }
 
 .feuilles3 {
     position: absolute;
     z-index: 1;
-    left: 33%;
-    bottom: 17%;
+    left: 31%;
+    bottom: 8%;
 }
 /**************************************************************************************************************/
 /*******************************   page  commander  section 1  nous contacter  *********************************/
@@ -619,4 +661,14 @@ footer a {
     line-height: 24px;
     letter-spacing: 0em;
     color:white;
+}
+
+
+
+/**************************************************************************************************************/
+/**************************************************************************************************************/
+
+.test {
+    
+    background-color: #ECE2DA;
 }
