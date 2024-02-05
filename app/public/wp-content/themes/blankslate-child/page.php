@@ -3,4 +3,5 @@
 <h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1> 
 <?php the_content(); ?>
 <?php endwhile; endif; ?>
+<div id="canettes"></div>
 <?php get_footer(); ?>

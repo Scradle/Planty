@@ -13,7 +13,7 @@ function ajouter_lien_admin_menu($items, $args) {
         $admin_url = admin_url();
 
         // Créer le lien pour l'administration
-        $lien_administration = '<li class="menu-item menu-item-administration"><a href="' . esc_url($admin_url) . '">Admin</a></li>';
+        $lien_administration = '<li class="menu-item menu-item-administration"><a href="' . esc_url($admin_url) . '">Admin</a>';
 
         // Diviser les éléments du menu en un tableau
         $menu_items = explode('</li>', $items);
@@ -30,3 +30,10 @@ function ajouter_lien_admin_menu($items, $args) {
 
 // Ajouter le filtre pour modifier les éléments du menu
 add_filter('wp_nav_menu_items', 'ajouter_lien_admin_menu', 10, 2);
+
+
+
+//supprime le css inline de gutemberg pour la vérification w3c
+add_action('wp_footer', function () {
+    wp_dequeue_style('core-block-supports');
+});

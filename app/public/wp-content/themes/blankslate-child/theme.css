@@ -1,7 +1,7 @@
 /***********************************************   Base   **********************************/
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap'); 
 
 body * {
    font-family: 'Syne', sans-serif;
@@ -10,7 +10,7 @@ body * {
 
 body {
     max-width: 1440px;
-    min-width: 320px;
+    min-width: 300px;
     margin: 0 auto;
 }
 
@@ -22,6 +22,10 @@ main {
 
 .page .entry-title {
     display: none;
+}
+
+a {
+    color: white;
 }
 
 /********************************************   Header    ***********************************/
@@ -39,7 +43,8 @@ nav {
 }
 
 .menu {
-   display: flex;    
+   display: flex;  
+   flex-direction: row;
    text-align: center;
 }
 
@@ -62,6 +67,7 @@ nav {
 
 }
 
+/*hook*/
 .menu-item-administration a {
     font-size: 16px;
     font-weight: 400;
@@ -87,7 +93,6 @@ nav {
 
 /**********************************************   Footer    **************************************/
 
-
 footer {
     height: 60px;
     display: flex;
@@ -105,6 +110,23 @@ footer a {
     color: black;
 }
 
+#canettes {
+    height: 130px;
+    width: 100%;
+    background-image: url("images/multicans.png");
+    background-repeat: repeat-x;
+    background-position: 58% 0%;
+}
+
+#canettes2 {
+    height: 130px;
+    width: 100%;
+    background-image: url("images/multicans.png");
+    background-repeat: repeat-x;
+    background-position: 58% 0%;
+    background-color: #ECE2DA;
+}
+
 /**************************************************************************************************************/
 /**********************************************  Front page  Section 1  Presentation  ******************************/
 
@@ -114,15 +136,14 @@ footer a {
     flex-direction: column;
     background-color: #ECE2DA;
     padding: 100px 0 100px 0;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-    filter: drop-shadow(0px 10px 0px rgba(0, 0, 0, 0.2));
+    border-radius: 0% 0% 48% 48% / 0% 0% 9% 9%;
+    filter: drop-shadow(0px 10px 0px rgba(227, 217, 208, 1));
 }
 
 .slogan {
     font-size: 38px;
     font-weight: 800;
-    line-height: 45,6px;
+    line-height: 46px;
     color:#3B8E46;
     text-align: center;
 }
@@ -187,9 +208,8 @@ footer a {
 	align-items: center;
     background-color: #ECE2DA;
     padding: 50px 0 50px 0;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
-    filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.2));
+    border-radius: 0% 0% 20% 20% / 0% 0% 3% 3%;
+    filter: drop-shadow(0px 5px 0px rgba(227, 217, 208, 1));
 }
 
 .gouts-h3 {
@@ -260,6 +280,9 @@ footer a {
 
 /**************************************************  Front page   Section 4  Avis **************************************/
 
+.avis {
+    justify-content: center;
+}
 .avis-h2 {
     padding: 100px 0 100px 0;
     font-size: 30px;
@@ -272,7 +295,7 @@ footer a {
 
 .temoignages {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     gap: 50px;
     padding-bottom: 100px;
@@ -292,6 +315,7 @@ footer a {
 
 .temoin-texte {
     max-width: 55%;
+    padding-left: 20px;
 }
 
 .temoin-texte-h3 {
@@ -312,115 +336,6 @@ footer a {
     color:black;
 }
 
-/**************************************************  Front page   Section 5  multicans **************************************/
-
-
-.multicans {
-    height: 180px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-}
-
-.multicans2 {
-    background-color: #ECE2DA;
-}
-
-.can1 {
-    position: absolute;
-    left: -58px;
-    bottom: -144px;
-}
-
-.can2 {
-    position: absolute;
-    left: 33px;
-    bottom: -122px;
-}
-
-.can3 {
-    position: absolute;
-    left: 126px;
-    bottom: -144px;
-}
-
-.can4 {
-    position: absolute;
-    left: 219px;
-    bottom: -164px;
-}
-
-.can5 {
-    position: absolute;
-    left: 312px;
-    bottom: -144px;
-}
-
-.can6 {
-    position: absolute;
-    left: 405px;
-    bottom: -122px;
-}
-
-.can7 {
-    position: absolute;
-    left: 498px;
-    bottom: -164px;
-}
-
-.can8 {
-    position: absolute;
-    left: 591px;
-    bottom: -144px;
-}
-
-.can9 {
-    position: absolute;
-    left: 684px;
-    bottom: -122px;
-}
-
-.can10 {
-    position: absolute;
-    left: 777px;
-    bottom: -144px;
-}
-
-.can11 {
-    position: absolute;
-    left: 869px;
-    bottom: -164px;
-}
-
-.can12 {
-    position: absolute;
-    left: 959px;
-    bottom: -144px;
-}
-
-.can13 {
-    position: absolute;
-    left: 1052px;
-    bottom: -122px;
-}
-
-.can14 {
-    position: absolute;
-    left: 1142px;
-    bottom: -144px;
-}
-
-.can15 {
-    position: absolute;
-    left: 1232px;
-    bottom: -164px;
-}
-
-.can16 {
-    position: absolute;
-    left: 1352px;
-    bottom: -144px;
-}
 
 /**************************************************************************************************************/
 /*******************************   page nous rencontrer  section 1  rencontre  *********************************/
@@ -431,14 +346,13 @@ footer a {
     flex-direction: column;
     background-color: #ECE2DA;
     padding: 200px 0 150px 0;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
-    filter: drop-shadow(0px 5px 0px rgba(0, 0, 0, 0.1));
+    border-radius: 0% 0% 48% 48% / 0% 0% 9% 9%;
+    filter: drop-shadow(0px 0px 0px rgba(227, 217, 208, 1));
 }
 
 .rencontre-img {
     position:absolute;
-    scale: 70%;
+    transform:scale(0.7);
     left: 10%;
     bottom: 35%;
     z-index: 1;
@@ -470,6 +384,9 @@ footer a {
 
 .equipe {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -485,7 +402,7 @@ footer a {
 
 .feuilles1bis {
     position: absolute;
-    scale: 60%;
+    transform:scale(0.6);
     left: 80%;
     bottom: -70px;
 }
@@ -493,10 +410,16 @@ footer a {
 
 .membres {
     display: flex;
-	flex-wrap: wrap;
+	flex-direction: row;
 	justify-content: center;
     gap: 200px;
     position: relative;
+}
+
+.membre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .membres-h4 {
@@ -525,6 +448,8 @@ footer a {
     background-color: #ECE2DA;
     padding: 50px 0 50px 0;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .nous-contacter-h3 {
@@ -555,7 +480,6 @@ footer a {
     border: none;
     resize: none;
     margin: 10px 0 20px 0;
-
     position: relative;
     z-index: 2;
 }
@@ -584,6 +508,8 @@ footer a {
     cursor: pointer;
     height: 55px;
     width: 198px;
+    z-index: 3;
+    position: relative;
 }
 
 .submit {
@@ -602,11 +528,15 @@ padding-left: 70px;
     bottom: 8%;
 }
 /**************************************************************************************************************/
-/*******************************   page  commander  section 1  nous contacter  *********************************/
+/*******************************   page  précommande  section 1  nous contacter  *********************************/
 
 .commander {
     background-color: #3B8E46;
     padding: 100px 0 100px 0;  
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .commander-h2 {
@@ -614,7 +544,6 @@ padding-left: 70px;
     font-weight: 800;
     line-height: 46px;
     letter-spacing: 0em;
-    text-align: center;
     color: white;
     padding-bottom: 50px;
 }
@@ -641,10 +570,10 @@ padding-left: 70px;
 
 .parfums {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    margin: 0 auto;
+
 }
 
 .parfum {
@@ -654,7 +583,7 @@ padding-left: 70px;
 	align-items: center;
     position: relative;
     max-width: 25%;
-    margin: 0 auto;
+ 
 }
 
 
@@ -698,7 +627,7 @@ padding-left: 70px;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;
+    letter-spacing: 0em; 
 }
 
 .commande2 {
@@ -724,7 +653,265 @@ padding-left: 70px;
     margin: 0;
 }
 
-.wpcf7 input[type="number"] {
-    -moz-appearance: textfield;
+/**************************************************************************************************************/
+/*******************************   responsive  ****************************************************************/
+
+
+@media (max-width: 850px) {
+
+    .temoignages {
+        flex-direction: column;
+    }
+
+    nav {
+    height: 170px; 
+    flex-direction: column;   
+    }
+
+    .header-logo {
+        width: 60%;
+
+        max-height: 1000%;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu-item a {
+        height: 50px;
+    }
+    
+    .menu-item:first-child a {
+        width: 150px;
+        font-size: 14px;
+    }
+    
+    .menu-item-administration a {
+        width: 100px;
+        font-size: 14px;
+    }
+    
+    .menu-item:last-child a {
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .membres {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        position: relative;
+    }
+    
+    .feuilles1bis {
+        position: absolute;
+        transform:scale(1);
+        left: 80%;
+        bottom: 0%;
+    }
+
+    .rencontre-img {
+        transform:scale(0.6);
+        left: 0%;
+        bottom: 45%;
+    }
+    
+    
+    
+    .rencontre-p {
+        max-width: 320px;
+    }
+    
+    .wpcf7-form input[type="text"],
+    .wpcf7-form input[type="email"] {
+        height: 36px;
+        width: 350px;
+    }
+
+    .wpcf7-form textarea {
+        width: 350px;
+    }
+
+    .feuilles3 {
+        
+        left: 18%;
+        bottom: 8%;
+    }
+
+    .parfums {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .parfum {
+        flex-direction: column;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .wpcf7-number {
+        margin-bottom: 10px;
+        margin-right: 40px;
+    }
+    
+    .commande2 {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0 30px 0;
+    }
+
+    .commande2b {
+        border-bottom: 1px solid #ffffff;
+        margin: 20px 0 20px 0;
+    }
 }
 
+/*****************  faible résolution  ****************************/
+
+@media (max-width: 500px) {
+
+    .menu-item:last-child a {
+        width: 150px;
+    }
+    .slogan {
+        font-size: 20px;
+    }
+
+    .canette {
+        transform:scale(0.6);
+    }
+
+    .feuilles1  {
+        transform:scale(0.6);
+        right: 40%;
+    }
+
+    .feuilles2  {
+        transform:scale(0.6);
+        left: 40%;
+    }
+
+    .composition-h3 {
+        font-size: 18px;
+    }
+    
+    .composition-p {
+        max-width: 240px;
+        font-size: 14px;
+    }
+    
+    .fruits {
+        max-width: 260px;
+    }
+
+    .gouts-h3 { 
+        font-size: 18px;
+    }
+
+    .gouts-p {
+        max-width: 240px;
+        font-size: 14px;
+    }
+    
+    
+    .fruits-card-h2 {
+        font-size: 30px;
+    }
+    
+    .avis-h2 {
+        font-size: 18px;
+    }
+    
+    
+    .temoignages-img {
+        max-height: 100px;
+    }
+    
+    .temoins {
+        max-width: 300px;
+    }
+    
+    .temoin-texte {
+        max-width: 45%;
+        padding-left: 10px;
+    }
+    
+    .temoin-texte-h3 {
+        font-size: 18px;
+    }
+    
+    .temoin-texte-p {
+        font-size: 14px;
+    }
+
+    .rencontre-h2 {
+        font-size: 20px;
+    }
+
+    .rencontre-p {
+        max-width: 240px;
+        font-size: 14px;
+    }
+    .equipe-h3 {
+        font-size: 18px;
+    }
+
+
+    .membres {
+        gap: 50px;
+    }
+    
+    .membres-h4 {
+        font-size: 18px;
+    }
+    
+    .membres-p {
+        font-size: 14px;
+        padding-bottom: 50px;
+    }
+
+    .nous-contacter-h3 {
+        font-size: 20px;
+    }
+
+    .form-label {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .wpcf7-form input[type="text"],
+    .wpcf7-form input[type="email"] {
+        width: 280px;
+    }
+
+    .wpcf7-form textarea {
+        width: 280px;
+    }
+
+
+    .submit {
+        padding-left: 7%;
+        }
+    
+    
+    .commander-h2 {
+        font-size: 20px;
+        padding-bottom: 50px;
+    }
+    
+    .commande-h3 {
+        font-size: 18px;
+    }
+
+    .commande-p {
+        font-size: 18px; 
+        margin-left: 10px;
+    }
+
+    .submit-commander {
+        margin-left: 50px;
+    }
+}
