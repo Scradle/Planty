@@ -17,3 +17,5 @@ Planty est un project de site à réaliser pour Openclassrooms dans le cadre de 
 8e commit: ajout du formulaire Commander.
 
 9e commit: ajout de 2 template de page pour intégrer correctement la frise de canettes , finalisation des formulaires et dernières corrections sur l'ensemble du site.
+
+10e commit: corrections diverses.
