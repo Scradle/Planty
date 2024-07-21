@@ -1,0 +1,916 @@
+/***********************************************   Base   **********************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap'); 
+
+body * {
+   font-family: 'Syne', sans-serif;
+   text-decoration: none;
+}
+
+body {
+    max-width: 1440px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+main {
+    background-color:white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.page .entry-title {
+    display: none;
+}
+
+a {
+    color: white;
+}
+
+/********************************************   Header    ***********************************/
+
+nav {
+   display: flex;    
+   flex-direction: row;
+   justify-content: space-between;
+   height: 80px;
+}
+
+.header-logo {
+    padding: 30px;
+    max-height: 100%;
+}
+
+.menu {
+   display: flex;  
+   flex-direction: row;
+   text-align: center;
+}
+
+.menu-item a {
+    text-decoration: none;
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.menu-item:first-child a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 0em;
+    color: black;
+    width: 200px;
+
+}
+
+/*hook*/
+.menu-item-administration a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: black;
+    width: 120px;
+}
+
+.menu-item:last-child a {
+    background-color: #E0B9B4;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 0em;
+    color: white;
+    width: 236px;
+}
+
+.menu-item:last-child a:hover {
+    background-color: #C02E44;
+}
+
+/**********************************************   Footer    **************************************/
+
+footer {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: Syne;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: 0em;
+    color: black;
+}
+
+#canettes {
+    height: 130px;
+    width: 100%;
+    background-image: url("images/multicans.png");
+    background-repeat: repeat-x;
+    background-position: 56% 0%;
+}
+
+#canettes2 {
+    height: 130px;
+    width: 100%;
+    background-image: url("images/multicans.png");
+    background-repeat: repeat-x;
+    background-position: 56% 0%;
+    background-color: #ECE2DA;
+}
+
+/**************************************************************************************************************/
+/**********************************************  Front page  Section 1  Presentation  ******************************/
+
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    background-color: #ECE2DA;
+    padding: 100px 0 100px 0;
+    border-radius: 0% 0% 48% 48% / 0% 0% 9% 9%;
+    filter: drop-shadow(0px 10px 0px rgba(227, 217, 208, 1));
+}
+
+.slogan {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 46px;
+    color:#3B8E46;
+    text-align: center;
+}
+
+.plantycan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feuilles1 {
+    z-index: 1;
+    position: absolute;
+    right: 50%;
+}
+
+.feuilles2 {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+}
+
+.canette {
+    z-index: 3;
+}
+
+/******************************************** Front page  Section 2  Composition  **********************************/
+
+.composition {
+    padding: 100px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.composition-h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color:#3B8E46;
+    padding-bottom: 50px;
+}
+
+.composition-p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color:black;
+    max-width: 497px;
+    text-align: center;
+}
+
+/***********************************************  Front page  Section 3  Gouts     ****************************************/
+
+.gouts {
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    background-color: #ECE2DA;
+    padding: 50px 0 50px 0;
+    border-radius: 0% 0% 20% 20% / 0% 0% 3% 3%;
+    filter: drop-shadow(0px 5px 0px rgba(227, 217, 208, 1));
+}
+
+.gouts-h3 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color:#D2776A;
+    padding-bottom: 20px;
+}
+
+.gouts-p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color:black;
+    padding-bottom: 50px;
+}
+
+.fruits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 50px;
+    max-width: 1024px;
+}
+
+.fruits-card {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+.fruits-card-h2 {
+    position:absolute;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 58px;
+    letter-spacing: 0em;
+    color:white;
+    text-align: center;
+}
+
+.gouts-a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color: #E0B9B4;
+    color:white;
+	border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-decoration: none;
+    width: 198px;
+    height: 55px;
+    
+}
+
+.gouts-a:hover {
+    background-color: #C02E44;
+}
+
+/**************************************************  Front page   Section 4  Avis **************************************/
+
+.avis {
+    justify-content: center;
+}
+.avis-h2 {
+    padding: 100px 0 100px 0;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color:#3B8E46;
+    text-align: center;
+}
+
+.temoignages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.temoignages-img {
+    max-height: 139px;
+}
+
+.temoins {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 343px;
+    
+}
+
+.temoin-texte {
+    max-width: 55%;
+    padding-left: 20px;
+}
+
+.temoin-texte-h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color:#3B8E46;
+    text-align: left;
+}
+
+.temoin-texte-p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:black;
+}
+
+
+/**************************************************************************************************************/
+/*******************************   page nous rencontrer  section 1  rencontre  *********************************/
+
+.rencontre {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #ECE2DA;
+    padding: 200px 0 150px 0;
+    border-radius: 0% 0% 48% 48% / 0% 0% 9% 9%;
+    filter: drop-shadow(0px 0px 0px rgba(227, 217, 208, 1));
+}
+
+.rencontre-img {
+    position:absolute;
+    transform:scale(0.7);
+    left: 10%;
+    bottom: 35%;
+    z-index: 1;
+}
+
+.rencontre-h2 {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #D2776A;
+    padding-bottom: 50px;
+    z-index: 2;
+}
+
+.rencontre-p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    max-width: 669px;
+    margin: 0 auto;
+}
+
+/*******************************   page nous rencontrer  section 2  équipe  *********************************/
+
+.equipe {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.equipe-h3 {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;  
+    padding: 100px 0 50px 0;  
+}
+
+.feuilles1bis {
+    position: absolute;
+    transform:scale(0.6);
+    left: 80%;
+    bottom: -70px;
+}
+
+
+.membres {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+    gap: 200px;
+    position: relative;
+}
+
+.membre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.membres-h4 {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.membres-p {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+
+/*******************************   page nous rencontrer  section 3  nous contacter  *********************************/
+
+.nous-contacter {
+    background-color: #ECE2DA;
+    padding: 50px 0 50px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.nous-contacter-h3 {
+    color:black;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.form-label {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    resize: none;
+    margin: 10px 0 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"] {
+    height: 71px;
+    width: 383px;
+}
+
+.wpcf7-form textarea {
+    height: 237px;
+    width: 383px;
+}
+
+.wpcf7-form input[type="submit"] {
+    background-color: #E0B9B4;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 55px;
+    width: 198px;
+    z-index: 3;
+    position: relative;
+}
+
+.submit {
+text-align: center;
+padding-left: 70px;
+}
+
+.wpcf7-form input[type="submit"]:hover {
+    background-color: #C02E44;
+}
+
+.feuilles3 {
+    position: absolute;
+    z-index: 1;
+    left: 31%;
+    bottom: 8%;
+}
+/**************************************************************************************************************/
+/*******************************   page  précommande  section 1  nous contacter  *********************************/
+
+.commander {
+    background-color: #3B8E46;
+    padding: 100px 0 100px 0;  
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.commander-h2 {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 46px;
+    letter-spacing: 0em;
+    color: white;
+    padding-bottom: 50px;
+}
+
+
+.commande {
+    max-width: 860px;
+    text-align: left;
+    margin: 0 auto;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding: 20px 0 20px 0;
+}
+
+.commande-h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    padding-bottom: 30px;
+    color: white;
+}
+
+
+.parfums {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.parfum {
+    display: flex;
+    flex-direction: column;
+	justify-content:center;
+	align-items: center;
+    position: relative;
+    max-width: 25%;
+ 
+}
+
+
+.parfum-img {
+    max-width: 90%;
+}
+
+.parfum-h2 {
+    position:absolute;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color:white;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-right: 20px;
+}
+
+.fruitnb {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+.wpcf7-number {
+    font-family: inter;
+    width: 39px;
+    height: 56px;
+    border: none;
+    text-align: center;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.commande-p {
+    color:white;
+
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em; 
+}
+
+.commande2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+}
+
+.commande2b {
+    border-right: 1px solid #ffffff;
+}
+
+.submit-commander {
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+/* Masquer les boutons d'incrémentation pour les champs de type nombre de Contact Form 7 */
+.wpcf7 input[type="number"]::-webkit-inner-spin-button,
+.wpcf7 input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/**************************************************************************************************************/
+/*******************************   responsive  ****************************************************************/
+
+
+@media (max-width: 850px) {
+
+    .temoignages {
+        flex-direction: column;
+    }
+
+    nav {
+    height: 170px; 
+    flex-direction: column;   
+    }
+
+    .header-logo {
+        width: 60%;
+
+        max-height: 1000%;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu-item a {
+        height: 50px;
+    }
+    
+    .menu-item:first-child a {
+        width: 150px;
+        font-size: 14px;
+    }
+    
+    .menu-item-administration a {
+        width: 100px;
+        font-size: 14px;
+    }
+    
+    .menu-item:last-child a {
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .membres {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        position: relative;
+    }
+    
+    .feuilles1bis {
+        position: absolute;
+        transform:scale(1);
+        left: 80%;
+        bottom: 0%;
+    }
+
+    .rencontre-img {
+        transform:scale(0.6);
+        left: 0%;
+        bottom: 45%;
+    }
+    
+    
+    
+    .rencontre-p {
+        max-width: 320px;
+    }
+    
+    .wpcf7-form input[type="text"],
+    .wpcf7-form input[type="email"] {
+        height: 36px;
+        width: 350px;
+    }
+
+    .wpcf7-form textarea {
+        width: 350px;
+    }
+
+    .feuilles3 {
+        
+        left: 18%;
+        bottom: 8%;
+    }
+
+    .commande-h3 {
+        text-align: center;
+    }
+    
+    .parfums {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .parfum {
+        flex-direction: column;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .wpcf7-number {
+        margin-bottom: 10px;
+    }
+    
+    .commande2 {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0 30px 0;
+    }
+
+    .commande2b {
+        border-bottom: 1px solid #ffffff;
+        margin: 20px 0 20px 0;
+    }
+
+    p {
+        justify-content: center;
+        display: flex;
+    }
+}
+
+/*****************  faible résolution  ****************************/
+
+@media (max-width: 500px) {
+
+    .menu-item:last-child a {
+        width: 150px;
+    }
+    .slogan {
+        font-size: 20px;
+    }
+
+    .canette {
+        transform:scale(0.6);
+    }
+
+    .feuilles1  {
+        transform:scale(0.6);
+        right: 40%;
+    }
+
+    .feuilles2  {
+        transform:scale(0.6);
+        left: 40%;
+    }
+
+    .composition-h3 {
+        font-size: 18px;
+    }
+    
+    .composition-p {
+        max-width: 240px;
+        font-size: 14px;
+    }
+    
+    .fruits {
+        max-width: 260px;
+    }
+
+    .gouts-h3 { 
+        font-size: 18px;
+    }
+
+    .gouts-p {
+        max-width: 240px;
+        font-size: 14px;
+    }
+    
+    
+    .fruits-card-h2 {
+        font-size: 30px;
+    }
+    
+    .avis-h2 {
+        font-size: 18px;
+    }
+    
+    
+    .temoignages-img {
+        max-height: 100px;
+    }
+    
+    .temoins {
+        max-width: 300px;
+    }
+    
+    .temoin-texte {
+        max-width: 45%;
+        padding-left: 10px;
+    }
+    
+    .temoin-texte-h3 {
+        font-size: 18px;
+    }
+    
+    .temoin-texte-p {
+        font-size: 14px;
+    }
+
+    .rencontre-h2 {
+        font-size: 20px;
+    }
+
+    .rencontre-p {
+        max-width: 240px;
+        font-size: 14px;
+    }
+    .equipe-h3 {
+        font-size: 18px;
+    }
+
+
+    .membres {
+        gap: 50px;
+    }
+    
+    .membres-h4 {
+        font-size: 18px;
+    }
+    
+    .membres-p {
+        font-size: 14px;
+        padding-bottom: 50px;
+    }
+
+    .nous-contacter-h3 {
+        font-size: 20px;
+    }
+
+    .form-label {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .wpcf7-form input[type="text"],
+    .wpcf7-form input[type="email"] {
+        width: 280px;
+    }
+
+    .wpcf7-form textarea {
+        width: 280px;
+    }
+    
+    
+    .commander-h2 {
+        font-size: 20px;
+        padding-bottom: 50px;
+    }
+    
+    .commande-h3 {
+        font-size: 18px;
+    }
+
+    .commande-p {
+        font-size: 18px; 
+        margin-left: 10px;
+    }
+}
